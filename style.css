@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 *{
     margin: 0;
     padding: 0;
+    font-family: "Inter", sans-serif;
 }
 :root{
     --primary-color:rgb(0, 0, 0);
@@ -149,9 +151,12 @@ nav{
 }
 .header-img img{
     width: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 .video1{
-position: absolute;
+position:absolute;
 width: 206px;
 height: 96px;
  margin-left: -120px;
@@ -220,6 +225,9 @@ main{
 .habit-img img{
     border-radius: 50%;
     width: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 .habit-img{
  text-align: center;
@@ -244,6 +252,9 @@ main{
 .run-img img{
     width: 100%;
     border-radius: 18px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
     
 }
 .run-img{
@@ -407,15 +418,18 @@ main{
 }
 .tim-img img{
     position: relative;
-    height: 272px;
-    width: 327px;
-    /* width:100%;
-    height: 100%; */
+    width:100%;
+    height: 100%;
     border-radius: 18px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
 
 }
 .tim-img{
     background-size: cover;
+    height: auto;
+    width: auto;
 }
 .meet-img-tex{
  margin-top: -60px;
@@ -431,7 +445,142 @@ font-weight: 900;
 
 }
 /* <!-- BMI Calculator Chart --> */
-.calculator{
-    margin-top: 88px;
+.chart-section{
+   max-width: 1440px;
+   margin: 0 auto;
+   background-color: #222222;
 }
+.calculator{
+    max-width:1060px;
+    margin: 0 auto;
+   /* padding-top: 88px; */
+   /* padding-bottom: 64px; */
+    background-color: #222222;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+}
+.your{
+    max-width: 577px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    align-items: center;
+}
+.your :last-child{
+    /* background-color: aqua; */
+    grid-column-start: span 2;
+    /* grid-row-start: span 2; */
+}
+.pp-h1{
+color: rgb(255, 255, 255);
+font-size:1.75rem;
+font-weight: 900;
+line-height: 120%;
+margin: 52px 0;
+}
+.table{
+   width: 50%;
+    border-collapse: collapse;
+}
+.table th {
+     padding: 10px;
+     text-align: start;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin-left: 10px;
+}
+.table-data td{
+    text-align: start;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin-left: 10px;
+}
+.table tr{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+
+/* footer section style */
+footer{
+    /* position:absolute; */
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color:#222222;
+}
+.footer{
+    max-width: 1060px;
+    margin: 0 auto;
+    background: #222222;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 66px;
+    padding-bottom: 78px;
+}
+.secend-div{
+ display: flex;
+ justify-content: space-between;
+align-items: center;
+gap: 100px;
+margin-right: -100px;
  
+}
+ .footer1{
+    max-width: 443px; 
+    text-align: start;
+ }
+ .secend-div li{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 15px;
+ }
+ .secend-div li a{
+    text-decoration: none;
+    font-size: 1.4rem;
+    line-height: 120%;
+    font-weight: 400;
+    text-align: start;
+    color:rgba(255, 255, 255, 0.5);
+
+
+ }
+ .secend-div h1{
+  font-size: 2rem;
+  line-height: 120%;
+  color: white;
+  margin-bottom: 39px;
+  text-align: start;
+  font-weight: 700;
+ }
+ .footer1 h1{
+    color: #E6533C;
+    font-size:4.37rem ;
+    text-align: start;
+    line-height: 120%;
+    font-weight: 900;
+    margin-bottom: 20px;
+ }
+
+ .h{
+    max-width: 1060px;
+    margin: 0 auto;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+ }
+ .footer4{
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: #222222;
+
+ }
+ .footer4 p{
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+    font-family: Inter;
+     font-size: 1.25rem;
+    font-weight: 400;
+     line-height: 24px;
+     letter-spacing: 0.3px;
+     padding: 36px 0px;
+ }
