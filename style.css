@@ -893,8 +893,9 @@ nav{
  .imf-p1{
    margin-top: -70px;
  }
- .imf-p1{
-    margin-left: -200px;
+ .imf-p3{
+    position: absolute;
+    left: 20px;
   }
  
  /*  */
