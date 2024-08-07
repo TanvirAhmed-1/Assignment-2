@@ -919,10 +919,6 @@ nav{
     width: 100%;
  }
  .calculator-div2{
-    
-    max-width: 354px;
-    margin: 0 25px;
-    padding: 0 20px;
     text-align: start;
 
  }
@@ -931,11 +927,13 @@ nav{
     
  }
  .your .input-text{
-    padding:12px 0px;
-    border-radius: 10px;
+    padding:12px 8px;
  }
- .your input ::placeholder{
-    margin-left: 10px;
+ .your ::placeholder{
+   /* padding-left: 15px; */
+ }
+ .{
+    padding-left: 15px;
  }
  body{
     background-color: #222222;
